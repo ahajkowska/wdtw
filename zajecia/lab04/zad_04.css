@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  letter-spacing: 0.8px;
+  background-color: #464646;
+  color: gray;
+}
+
+header {
+  padding: 20px;
+  position: fixed;
+  background-color: #2f2f2f;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+header .title {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .title span {
+  color: orangered;
+}
+header .subtitle {
+  text-transform: uppercase;
+  font-size: 12px;
+  position: absolute;
+  top: 35px;
+  left: 60px;
+}
+header .menu {
+  text-transform: uppercase;
+  font-size: 14px;
+  display: flex;
+  margin-right: 20px;
+}
+header .menu div {
+  margin-right: 15px;
+}
+header .menu .option {
+  cursor: pointer;
+}
+header .menu .option:nth-of-type(1) {
+  color: white;
+}
+
+main {
+  width: 1100px;
+  position: relative;
+  top: 80px;
+  margin: 0 100px;
+}
+main .main-text {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 200px;
+  top: 130px;
+}
+main .images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .images img {
+  border: 25px solid #2f2f2f;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+main .images img:nth-last-of-type(1) {
+  top: 150px;
+  right: 150px;
+}
+main .description {
+  width: 250px;
+  position: absolute;
+  right: 100px;
+  top: 200px;
+  font-size: 10px;
+  line-height: 20px;
+}
+main .description .more {
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=zad_04.css.map */

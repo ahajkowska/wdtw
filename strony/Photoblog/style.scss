@@ -1,0 +1,210 @@
+@import 'variables';
+
+body {
+  background-color: $background-color;
+  color: $white;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.875em;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  box-shadow: $box-shadow;
+  padding: 10px;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  .logo{
+    color: $logo-1;
+    font-size: larger;
+    font-weight: bold;
+    span{
+      color: $logo-2;
+    }
+  }
+  .zaloguj{
+    background-color: $white;
+    font-weight: bold;
+    text-transform: lowercase;
+    margin-right: 10px;
+  }
+  .konto{
+    background-color: $orange;
+    color: $white;
+    font-weight: bold;
+    text-transform: lowercase;
+    margin-right: 20px;
+  }
+}
+
+button{
+  border-style: none;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+nav{
+  box-shadow: $box-shadow;
+  position: relative;
+  top: 70px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 11px;
+    line-height: 15px;
+  }
+  span{
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .wpisów{
+    margin-right: 130px;
+  }
+}
+
+main{
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 10px;
+  position: relative;
+  bottom: 125px;
+  div{
+    background-color: $dark-gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: smaller;
+    line-height: 17px;
+    height: 50px;
+  }
+  .fajne{
+    font-weight: bold;
+    span{
+      font-weight: normal;
+    }
+  }
+}
+
+.screen{
+  background-color: $white;
+  box-shadow: $box-shadow;
+  min-height: 370px;
+  min-width: 600px;
+}
+
+.wyświetlenia{
+  font-size: 10px;
+  display: flex;
+  justify-content: right;
+  padding: 5px 0 ;
+  span{
+    font-weight: bold;
+  }
+}
+
+.arrows{
+  
+  i{
+    font-size: 30px;
+    padding: 25px 15px;
+    background-color: $dark-gray;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .l-arrow{
+    position: absolute;
+    left: 170px;
+  }
+  .r-arrow{
+    position: relative;
+    left: 10px;
+  }
+}
+
+.right{
+  background-color: $dark-gray;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  position: relative;
+  bottom: 55px;
+  left: 20px;
+  width: 200px;
+  .avatar{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: $white;
+  }
+  .opis{
+    padding-top: 15px;
+    div{
+      margin-bottom: 8px;
+    }
+    button{
+      display: flex;
+      width: 200px;
+      justify-content: center;
+      align-items: center;
+      color: $background-color;
+      background-color: $white;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+    .obserwuj{
+      background-color: $orange;
+      color: $white;
+      i{
+        margin-right: 5px;
+      }
+    }
+  }
+}
+// Przycisk jasny (np. zaloguj się)
+
+// Kolor tekstu: #333333
+// Kolor tła: $white
+// Obramowanie: brak
+// Zaokrąglenie krawędzi: niewielkie
+
+// Przycisk pomarańczowy (np. załóż konto)
+
+// Kolor tekstu: $white
+// Kolor tła: $orange
+// Obramowanie: brak
+// Zaokrąglenie krawędzi: niewielkie
+
+// Przyciski poprzedniego i następnego zdjęcia
+
+// Kolor tekstu: rgba(211, 211, 211, 0.541)
+// Kolor tła: $dark-gray

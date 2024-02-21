@@ -1,0 +1,144 @@
+@import "variables";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    color: $font;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    border-style: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 10px;
+}
+
+header{
+    background-color: $background;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    .logo{
+        background-color: $main;
+        text-transform: none;
+        color: white;
+        padding: 10px;
+    }
+    button{
+        margin-right: 20px;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    .extra{
+        display: flex;
+        align-items: center;
+        div{
+            margin-right: 20px;
+        }
+        .search{
+            display: flex;
+            position: relative;
+            img{
+                position: absolute;
+                left: 0;
+                border: 1px solid $details;
+                padding: 10px;
+            }
+        }
+        input{
+            border: 1px solid $details;
+            display: flex;
+            padding: 10px;
+        }
+    }
+}
+
+nav, main{
+    position: relative;
+    top: 50px;
+}
+
+nav{
+    background-color: aquamarine;
+    margin: 0;
+    .dołącz{
+        background-color: $background;
+        color: $main;
+    }
+    .description{
+        margin-bottom: 20px;
+    }
+}
+
+.mainpic{
+    background-color: $main-2;
+    position: relative;
+    color: $background;
+    padding: 20px;
+    top: 70px;
+    margin: 0 50px;
+    .text{
+        max-width: 500px;
+        .title{
+            span{
+                font-size: 10px;
+                position: relative;
+                bottom: 10px;
+            }
+        }
+        .description{
+            font-size: 15px;
+        }
+    }
+}
+.image{
+    background-color: black;
+    height: 250px;
+    width: 500px;
+    position: absolute;
+    left: 550px;
+    top: 50px;
+}
+
+#nav{
+    position: relative;
+    top: 90px;
+    .options{
+        display: flex;
+        justify-content: space-around;
+        button{
+            font-size: 20px;
+        }
+    }
+}
+
+main{
+    margin: 0 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    position: relative;
+    top: 190px;
+    gap: 20px;
+    .column{
+        .picture{
+            height: 400px;
+            background-color: gray;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: $details;
+    padding: 20px;
+}

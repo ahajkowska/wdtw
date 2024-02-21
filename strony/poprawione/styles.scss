@@ -1,0 +1,170 @@
+@import "variables";
+
+button{
+    cursor: pointer;
+}
+
+.t{
+    cursor: pointer;
+}
+
+.t:hover {
+    background-color: $hover-tile-bg-and-button-bg;
+    border-radius: 90px;
+}
+
+
+body{
+    font-family: $font;
+    background-color: $body-bg-color;
+    font-size: 14px;
+    margin: 0;
+}
+/* Horizontal Stripe */
+body::after{
+    content: "";
+    position: fixed;
+    background-color: $body-box-bg-color; /* Color of the stripe */
+    left: 0;
+    right: 0;
+    height: 80px; /* Thickness of the stripe */
+    top: 50%; /* Centers the stripe vertically */
+    z-index: -1;
+}
+
+div.mainicon img#mainicon { 
+    height: 35px;
+    width: 140px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    color: $black-diff;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    z-index: 100;
+    .header-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 1280px;
+    }
+    .icon{
+        margin-right: 100px;
+    }
+    .titles{
+        display: flex;
+        font-weight: bold;
+        
+        .t{
+            margin-right: 30px;
+            padding: 10px;
+            &:last-child {
+                margin-right: 0; // Removes margin for the last item
+            cursor: pointer;
+        }
+    }
+}    
+    
+    i{
+            border: 1px solid $tile-button-border;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+    i:hover{
+            background-color: $hover-button-bg;
+        }
+    
+}
+
+
+main{
+    display: grid; /* Use CSS Grid */
+    place-items: center; /* Center content horizontally and vertically */
+    padding-top: 60px; /* Adjust if your header overlaps content */
+}
+
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.box{
+    border: 1px solid $desc-color;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 110px; /* Prevents boxes from becoming too small */
+    height: 110px; /* Ensures a minimum height for all boxes */
+    .ikona{
+        margin-bottom: 10px;
+    }
+    .tytuł{
+        font-weight: bold;
+    }
+    .text{
+        color: $desc-color;
+    }
+}
+
+.box:hover{
+    border: 2px solid $hover-tile-bg-and-button-bg;
+}
+
+.column{
+    text-align: center;
+}
+
+.column:nth-of-type(2) > .box:nth-of-type(2) > .opis > .text {
+    font-weight: bold;
+    color: $black-diff;
+}
+
+.opis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    button{
+        margin-right: 10px;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 10px;
+        width: 130px;
+    }
+    .getstarted{
+        button{
+            border-style: none;
+            background-color: $hover-tile-bg-and-button-bg;
+            color: $hover-button-bg;
+        }
+    }
+    .npm{
+        button{
+            border: 1px solid $hover-tile-bg-and-button-bg;
+            background-color: transparent;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  letter-spacing: 0.8px;
+}
+
+header {
+  color: white;
+  background-image: url("foggy.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 250px;
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.3803921569);
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  z-index: 100;
+}
+.nav .header {
+  font-weight: bold;
+}
+.nav .nav-items {
+  display: flex;
+  list-style: none;
+}
+.nav .nav-items li {
+  margin-right: 150px;
+}
+
+.box {
+  text-align: center;
+  position: relative;
+  top: 95px;
+}
+.box .title {
+  font-weight: bold;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.items {
+  margin: 15px 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1300px;
+}
+.items .item {
+  background-color: white;
+  box-shadow: 0 0 15px #8e9074;
+  min-width: 25%;
+  flex: 1;
+}
+.items .item .image {
+  background-color: #8e9074;
+  height: 150px;
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.items .item .image .date {
+  color: white;
+}
+.items .item .title {
+  font-weight: bold;
+  padding: 10px;
+}
+.items .item .description {
+  text-align: justify;
+  padding: 10px;
+}/*# sourceMappingURL=zad_04.css.map */

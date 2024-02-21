@@ -1,0 +1,188 @@
+@charset "UTF-8";
+body {
+  background-color: #333;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 0.875em;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  box-shadow: 0 5px rgba(32, 32, 32, 0.3);
+  padding: 10px;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+header .logo {
+  color: #8b8b8b;
+  font-size: larger;
+  font-weight: bold;
+}
+header .logo span {
+  color: #fcc133;
+}
+header .zaloguj {
+  background-color: white;
+  font-weight: bold;
+  text-transform: lowercase;
+  margin-right: 10px;
+}
+header .konto {
+  background-color: #ff3600;
+  color: white;
+  font-weight: bold;
+  text-transform: lowercase;
+  margin-right: 20px;
+}
+
+button {
+  border-style: none;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+nav {
+  box-shadow: 0 5px rgba(32, 32, 32, 0.3);
+  position: relative;
+  top: 70px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+nav div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 11px;
+  line-height: 15px;
+}
+nav span {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+nav .wpisów {
+  margin-right: 130px;
+}
+
+main {
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 10px;
+  position: relative;
+  bottom: 125px;
+}
+.left div {
+  background-color: rgba(111, 111, 111, 0.3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: smaller;
+  line-height: 17px;
+  height: 50px;
+}
+.left .fajne {
+  font-weight: bold;
+}
+.left .fajne span {
+  font-weight: normal;
+}
+
+.screen {
+  background-color: white;
+  box-shadow: 0 5px rgba(32, 32, 32, 0.3);
+  min-height: 370px;
+  min-width: 600px;
+}
+
+.wyświetlenia {
+  font-size: 10px;
+  display: flex;
+  justify-content: right;
+  padding: 5px 0;
+}
+.wyświetlenia span {
+  font-weight: bold;
+}
+
+.arrows i {
+  font-size: 30px;
+  padding: 25px 15px;
+  background-color: rgba(111, 111, 111, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.arrows .l-arrow {
+  position: absolute;
+  left: 170px;
+}
+.arrows .r-arrow {
+  position: relative;
+  left: 10px;
+}
+
+.right {
+  background-color: rgba(111, 111, 111, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  position: relative;
+  bottom: 55px;
+  left: 20px;
+  width: 200px;
+}
+.right .avatar {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: white;
+}
+.right .opis {
+  padding-top: 15px;
+}
+.right .opis div {
+  margin-bottom: 8px;
+}
+.right .opis button {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  background-color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.right .opis .obserwuj {
+  background-color: #ff3600;
+  color: white;
+}
+.right .opis .obserwuj i {
+  margin-right: 5px;
+}/*# sourceMappingURL=style.css.map */

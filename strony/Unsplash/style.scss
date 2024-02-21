@@ -1,0 +1,223 @@
+@import 'variables';
+
+body {
+  font-family: BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica,
+    Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $primary-text-color;
+  margin: 0;
+}
+
+button{
+  cursor: pointer;
+  border-style: none;
+  background-color: transparent;
+}
+
+header{
+  position: fixed;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  z-index: 100;
+  div, input, button{
+    margin-right: 15px;
+  }
+  .logo{
+    color: $primary-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    display: flex;
+    align-items: center;
+  }
+  input{
+    display: flex;
+    border: 1px solid $lightgray;
+    border-radius: 20px;
+    width: 100%;
+    padding: 8px 20px;
+  }
+  .separator{
+    border-right: 1px solid $lightgray;
+  }
+  #submit{
+    border: 1px solid $lightgray;
+    padding: 5px 10px;
+  }
+  i{
+    font-size: 18px;
+  }
+  button{
+    color: $primary-text-color;
+  }
+}
+
+nav{
+  display: flex;
+  position: relative;
+  top: 50px;
+  padding: 0 10px;
+  div, button{
+    margin-right: 10px;
+  }
+  button{
+    color: $primary-text-color;
+    font-size: 13px;
+    padding: 7px;
+  }
+  .active{
+    color: $primary-color;
+    font-weight: bold;
+  }
+  .separator{
+    border-right: 1px solid $lightgray;
+  }
+}
+
+#search-section{
+  position: relative;
+  top: 50px;
+  .content{
+    background-color: $primary-color;
+    color: $more-color;
+    padding: 100px;
+    padding-left: 25%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    div > span{
+      display: flex;
+    }
+    .trending{
+      display: flex;
+      color: $primary-text-color;
+      span{
+        margin-right: 5px;
+        color: $more-color;
+      }
+    }
+    .header{
+      font-weight: bold;
+      font-size: 30px;
+    }
+    .search{
+      padding-left: 0;
+      display: flex;
+      align-items: center;
+      position: relative;
+      right: 5px;
+      #search{
+        padding: 10px 30px;
+        border-style: none;
+        border-radius: 10px;
+        width: 500px;
+        margin: 10px 0 ;
+      }
+      i{
+        position: absolute;
+        left: 20px;
+        padding: 10px 0;
+        color: $primary-text-color;
+      }
+    }
+  }
+}
+
+.main{
+  position: relative;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  .pic{
+    min-width: 300px;
+    background-color: $pic-background-color;
+    margin-bottom: 20px;
+  }
+}
+
+.dots{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  top: 70px;
+  #dots{
+    background-color: $lightgray;
+    border-radius: 10px;
+    padding: 10px 15px;
+  }
+}
+
+footer{
+  position: relative;
+  top: 120px;
+  border-top: 1px solid $lightgray;
+  margin: 0 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  a{
+    text-decoration: none;
+    color: $primary-text-color;
+    margin-right: 10px;
+  }
+  .right-section{
+    i{
+      font-size: 20px;
+    }
+  }
+}
+
+.pic-info:hover{
+  opacity: 100;
+  transition: opacity 0.3s ease-in-out;
+}
+.pic{
+  position: relative;
+}
+.pic-info{
+  opacity: 0;
+  padding: 10px;
+  .top{
+    display: flex;
+    justify-content: space-between;
+  }
+  button{
+    font-size: 20px;
+    color: $primary-text-color;
+  }
+  .bottom{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    .person{
+      display: flex;
+      align-items: center;
+    }
+    .logo{
+      background-color: $primary-text-color;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin-right:10px;
+      margin-bottom: 10px;
+    }
+    .name{
+      font-size: 15px;
+      display: flex;
+      font-size: 14px;
+    }
+    i{
+      position: relative;
+      left: 100px;
+    }
+  }
+}

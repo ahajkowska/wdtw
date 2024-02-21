@@ -1,0 +1,27 @@
+.box{
+    padding: 20px;
+    background-color: lightgray;
+    border: 2px solid black;
+    max-width: 800px;
+}
+
+.box2{
+    border: 5px solid white;
+    padding: 20px;
+}
+
+.box3{
+    border: 2px solid black;
+}
+
+.box-content{
+    font-family: Arial;
+    border: 5px solid white;
+    
+}
+
+.box4{
+    border: 2px solid black;
+    margin: 0;
+    padding: 10px;
+}

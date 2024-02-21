@@ -1,0 +1,160 @@
+@charset "UTF-8";
+button {
+  cursor: pointer;
+}
+
+.t {
+  cursor: pointer;
+}
+
+.t:hover {
+  background-color: #1876d1;
+  border-radius: 90px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, Segoe UI Symbol;
+  background-color: #edf5ff;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Horizontal Stripe */
+body::after {
+  content: "";
+  position: fixed;
+  background-color: #e8f2ff; /* Color of the stripe */
+  left: 0;
+  right: 0;
+  height: 80px; /* Thickness of the stripe */
+  top: 50%; /* Centers the stripe vertically */
+  z-index: -1;
+}
+
+div.mainicon img#mainicon {
+  height: 35px;
+  width: 140px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  color: #191919;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  z-index: 100;
+}
+header .header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1280px;
+}
+header .icon {
+  margin-right: 100px;
+}
+header .titles {
+  display: flex;
+  font-weight: bold;
+}
+header .titles .t {
+  margin-right: 30px;
+  padding: 10px;
+}
+header .titles .t:last-child {
+  margin-right: 0;
+  cursor: pointer;
+}
+header i {
+  border: 1px solid #c7e0ff;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+header i:hover {
+  background-color: #e3f0ff;
+}
+
+main {
+  display: grid; /* Use CSS Grid */
+  place-items: center; /* Center content horizontally and vertically */
+  padding-top: 60px; /* Adjust if your header overlaps content */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.box {
+  border: 1px solid #73879e;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 110px; /* Prevents boxes from becoming too small */
+  height: 110px; /* Ensures a minimum height for all boxes */
+}
+.box .ikona {
+  margin-bottom: 10px;
+}
+.box .tytuł {
+  font-weight: bold;
+}
+.box .text {
+  color: #73879e;
+}
+
+.box:hover {
+  border: 2px solid #1876d1;
+}
+
+.column {
+  text-align: center;
+}
+
+.column:nth-of-type(2) > .box:nth-of-type(2) > .opis > .text {
+  font-weight: bold;
+  color: #191919;
+}
+
+.opis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.buttons button {
+  margin-right: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  width: 130px;
+}
+.buttons .getstarted button {
+  border-style: none;
+  background-color: #1876d1;
+  color: #e3f0ff;
+}
+.buttons .npm button {
+  border: 1px solid #1876d1;
+  background-color: transparent;
+}/*# sourceMappingURL=styles.css.map */

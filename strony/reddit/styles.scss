@@ -1,0 +1,40 @@
+$background-color:rgb(58, 50, 50);
+$background-color2: rgb(87, 82, 82);
+
+
+body{
+    background-color: $background-color;
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+header{
+    position: fixed;
+    background-color: $background-color2;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    z-index: 100;
+    
+    .logo{
+        color: white;
+    }
+    input{
+        border: none;
+        background-color: gray;
+        color: black; //nie dziala
+    }
+    button{
+        border: none;
+        background: transparent;
+    }
+    .app {
+        background-color: gray;
+    }
+    .log {
+        background-color: orangered;
+    }
+}

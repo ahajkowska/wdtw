@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('header-image.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    height: 100vh;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 70px;
+        .logo > img{
+            width: 150px;
+            cursor: pointer;
+        }
+    }
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 100px;
+        h1{
+            font-size: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0;
+        }
+        h3, p{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+        .input{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            input{
+                width: 450px;
+                padding: 20px;
+            }
+        }
+    }
+    .language{
+        margin-right: 15px;
+    }
+}
+
+button{
+    cursor: pointer;
+    border-style: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    padding: 10px 15px;
+}
+.language{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    i{
+        color: whitesmoke;
+        font-size: 15px;
+    }
+}
+.sign-in{
+    background-color: red;
+    font-size: 15px;
+}
+.get-started{
+    background-color: red;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    padding: 20px 100px;
+    .column{
+        font-size: 25px;
+        flex-basis: 50%;
+        img{
+            display: block;
+            width: 90%;
+            margin: auto;
+        }
+    }
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 100px;
+    h2{
+        font-size: 50px;
+        text-align: center;
+    }
+    .questions{
+        
+        li{
+            list-style: none;
+        }
+        label{
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #303030;
+            display: flex;
+            padding: 20px;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        label::after { // stworzenie X, który się rusza
+            content: '+';
+            font-size: 34px;
+            position: absolute;
+            right: 20px;
+            transition: transform 0.5s;
+        }
+        .answer{
+            font-size: 18px;
+        }
+    }
+}
+
+footer{
+    margin: 0 100px;
+    a{
+        text-decoration: none;
+        color: rgb(101, 101, 101);
+    }
+    .options{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .column{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .lang{
+        background-color: transparent;
+        border: 1px solid whitesmoke;
+    }
+}

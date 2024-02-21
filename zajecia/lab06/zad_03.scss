@@ -1,0 +1,53 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #1d1e19;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    background-image: url('foggy.jpg');
+    background-size: contain;
+    border-radius: 10px;
+    grid-area: image;
+}
+
+.info, .item-1, .item-2, .item-3{
+    background-color: rgba(255, 255, 255, 0.413);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container{
+    max-width: 900px;
+    margin: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "item-1 item-2 image"
+        "item-1 item-2 image"
+        "item-3 item-3 image"
+        "item-3 item-3 info"
+        "item-3 item-3 info"
+    ;
+}
+
+.item-1{
+    grid-area: item-1;
+}
+.item-2{
+    grid-area: item-2;
+}
+.item-3{
+    grid-area: item-3;
+}
+.info{
+    grid-area: info;
+}

@@ -1,0 +1,186 @@
+@import 'variables';
+
+body {
+  background-color: rgb(28, 30, 33);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: $font;
+  margin: 20px 250px;
+}
+
+button{
+  cursor: pointer;
+}
+
+.header{
+  display: flex;
+  margin-bottom: 20px;
+  .logo{
+    background-color: lightseagreen;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  .change-photo{
+    position: relative;
+    left: -30px;
+    top: 70px;
+  }
+  .name{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.menu-list{
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: $font;
+    padding: 5px 10px;
+  }
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  button{
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgba(152, 152, 152, 0.342);
+    color: $font;
+    padding: 10px 15px;
+    margin-right: 10px;
+  }
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 20px;
+}
+
+.box{
+  border-radius: 5px;
+  background-color: $menu;
+  margin: 20px 0;
+  h3, p{
+    padding: 10px 20px;
+  }
+  h3{
+    padding-bottom: 0;
+  }
+}
+
+.left > .box > .photos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  .photo{
+    background-color: aquamarine;
+    border-radius: 5px;
+    height: 100px;
+    .content{
+      font-size: 40px;
+      text-align: center;
+      opacity: 0;
+    }
+    .content:hover{
+      opacity: 100;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+}
+
+.left > .box{
+  padding: 10px 20px;
+  h2{
+    margin: 0 0 10px 0;
+  }
+}
+
+.footer{
+  font-size: 12px;
+  ul{
+    display: flex;
+    padding-left: 0;
+  }
+  li{
+    list-style: none;
+  }
+  li:nth-of-type(2){
+    padding-left: 10px;
+  }
+  li:first-of-type{
+    border-right: 1px solid $font;
+    padding-right: 10px;
+  }
+}
+
+.right{
+  .box{
+    .photos{
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr 1fr;
+      gap: 3px;
+      .photo{
+        height: 150px;
+        background-color: lightgray;
+        grid-column: span 2;
+      }
+      .photo:nth-of-type(4), .photo:nth-of-type(5){
+        grid-column: span 3;
+      }
+    }
+  }
+  .box:nth-of-type(3){
+    .photo:last-of-type{
+      grid-column: span 6;
+    }
+  }
+  .box:nth-of-type(4){
+    .photos{
+      grid-template-rows: 1fr;
+    }
+    .photo:last-of-type{
+      grid-column: span 6;
+    }
+  }
+}
+
+.box:nth-of-type(5){
+  padding-bottom: 20px;
+  a{
+    text-decoration: none;
+    color: $font;
+    font-weight: bold;
+    padding: 0 20px;
+  }
+}
+
+.box:last-of-type{
+  text-align: center;
+  padding: 5px;
+}
+
+@for $i from 1 through 9 {
+  .left {
+    .box {
+      .photos{
+        .photo:nth-of-type(#{$i}) {
+        background-color: nth($images, $i);
+      }
+    }
+  }
+}
+}

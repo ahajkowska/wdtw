@@ -1,0 +1,190 @@
+@charset "UTF-8";
+body {
+  background-color: whitesmoke;
+  color: rgb(33, 33, 33);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  background-color: rgba(10, 87, 87, 0.498);
+  color: whitesmoke;
+  line-height: 30px;
+  padding: 10px 30px;
+  z-index: 100;
+}
+nav a {
+  color: whitesmoke;
+  font-weight: bold;
+}
+nav button {
+  background-color: whitesmoke;
+  border-style: none;
+  border-radius: 3px;
+  color: rgba(10, 87, 87, 0.498);
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+header {
+  position: relative;
+  top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+header .logo {
+  color: rgb(4, 4, 183);
+  font-weight: bold;
+  font-size: 30px;
+}
+header .logo span {
+  background-color: rgb(4, 4, 183);
+  color: whitesmoke;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+header .buttons > .header:first-of-type {
+  padding: 15px 20px;
+  font-weight: bold;
+}
+header .buttons > .header:first-of-type:hover {
+  background-color: rgb(94, 93, 93);
+}
+header .buttons > .header:last-of-type {
+  border: 1px solid rgb(4, 4, 183);
+  padding: 15px 20px;
+  border-radius: 90px;
+  color: rgb(4, 4, 183);
+  font-weight: bold;
+}
+header .buttons > .header:last-of-type:hover {
+  background-color: rgba(4, 4, 183, 0.304);
+}
+header .categories {
+  display: flex;
+}
+
+.right {
+  display: flex;
+}
+.right .separator {
+  border-right: 1px solid rgb(94, 93, 93);
+}
+.right .header {
+  border-style: none;
+  background-color: transparent;
+  color: rgb(94, 93, 93);
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 90px;
+}
+.right .header:hover {
+  color: rgb(44, 43, 43);
+}
+
+main {
+  position: relative;
+  top: 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .big-text {
+  color: rgb(206, 70, 21);
+  font-size: 40px;
+}
+main .content {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+main div {
+  padding: 10px;
+}
+main .line {
+  display: flex;
+}
+main .line .separator {
+  position: relative;
+  bottom: 20px;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+
+.nie-pamiętam, .pokaż {
+  color: rgb(4, 4, 183);
+}
+
+.zaloguj {
+  background-color: rgb(4, 4, 183);
+  border-radius: 90px;
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 15px;
+}
+
+button {
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.image {
+  background-color: rgb(206, 70, 21);
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  margin-left: 25%;
+}
+
+.warning {
+  font-size: smaller;
+}
+.warning a {
+  text-decoration: none;
+}
+
+.google, .dołącz {
+  border: 2px solid rgb(94, 93, 93);
+  padding: 10px 20px;
+  border-radius: 90px;
+  margin-bottom: 10px;
+}
+
+footer {
+  position: relative;
+  top: 150px;
+  font-size: 30px;
+  background-color: tan;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px;
+}
+footer .sugerowane {
+  text-transform: uppercase;
+  color: rgb(94, 93, 93);
+  font-size: small;
+}
+footer button {
+  border: 1px solid rgb(94, 93, 93);
+  border-radius: 90px;
+  padding: 5px 10px;
+  color: rgb(94, 93, 93);
+}
+footer button:hover {
+  background-color: rgb(165, 142, 111);
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+}
+
+.inputs {
+  width: 500px;
+  text-align: right;
+}/*# sourceMappingURL=styles.css.map */

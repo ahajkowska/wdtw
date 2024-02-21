@@ -1,0 +1,189 @@
+@import 'variables';
+
+body{
+    background-color: $background;
+    color: $font;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+nav{
+    position: fixed;
+    background-color: $cookie-message;
+    color: whitesmoke;
+    line-height: 30px;
+    padding: 10px 30px;
+    z-index: 100;
+    a{
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    button{
+        background-color: $background;
+        border-style: none;
+        border-radius: 3px;
+        color: $cookie-message;
+        font-weight: bold;
+        padding: 5px 10px;
+        margin-right: 10px;
+    }
+}
+
+header{
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    .logo{
+        color: $logo-and-button;
+        font-weight: bold;
+        font-size: 30px;
+        span{
+            background-color: $logo-and-button;
+            color: $background;
+            padding: 0 3px;
+            border-radius: 3px;
+        }
+    }
+    .buttons > .header:first-of-type{
+        padding: 15px 20px;
+        font-weight: bold;
+    }
+    .buttons > .header:first-of-type:hover{
+        background-color: $details;
+    }
+    .buttons> .header:last-of-type{
+        border: 1px solid $logo-and-button;
+        padding: 15px 20px;
+        border-radius: 90px;
+        color: $logo-and-button;
+        font-weight: bold;
+    }
+    .buttons> .header:last-of-type:hover{
+        background-color: rgba(4, 4, 183, 0.304);
+    }
+    .categories{
+        display: flex;
+    }
+}
+.right{
+    display: flex;
+    .separator{
+        border-right: 1px solid $details;
+    }
+    .header{
+        border-style: none;
+        background-color: transparent;
+        color: $details;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 90px;
+    }
+    .header:hover{
+        color: rgb(44, 43, 43);
+    }
+}
+
+main{
+    position: relative;
+    top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .big-text{
+        color: $header;
+        font-size: 40px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+    div{
+        padding: 10px;
+    }
+    .line{
+        display: flex;
+        .separator{
+            position: relative;
+            bottom: 20px;
+            border-bottom: 1px solid gray ;
+            width: 100%;
+        }
+    }
+}
+
+.nie-pamiętam, .pokaż{
+    color: $logo-and-button;
+}
+.zaloguj{
+    background-color: $logo-and-button;
+    border-radius: 90px;
+    color: $background;
+    font-weight: bold;
+    padding: 15px;
+}
+
+button{
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.image{
+    background-color: $header;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    margin-left: 25%;
+}
+
+.warning{
+    font-size: smaller;
+    a{
+        text-decoration: none;
+    }
+}
+
+.google, .dołącz{
+    border: 2px solid $details;
+    padding: 10px 20px;
+    border-radius: 90px;
+    margin-bottom: 10px;
+}
+
+footer{
+    position: relative;
+    top: 150px;
+    font-size: 30px;
+    background-color: tan;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
+    .sugerowane{
+        text-transform: uppercase;
+        color: $details;
+        font-size: small;
+    }
+    button{
+        border: 1px solid $details;
+        border-radius: 90px;
+        padding: 5px 10px;
+        color: $details;
+    }
+    button:hover{
+        background-color: rgb(165, 142, 111);
+    }
+}
+
+input{
+    padding: 10px;
+    width: 300px;
+    
+}
+.inputs{
+    width: 500px;
+    text-align: right; // +width ==> wyrównane do prawej tekst niezaleznie od inputow
+}

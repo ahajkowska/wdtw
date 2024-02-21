@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+}
+
+.box{
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    height: 100vh;
+    color: white;
+    text-shadow: 2px 2px 5px gray;
+}
+
+$colors: violet, wheat, whitesmoke, yellow, yellowgreen, turquoise, tomato, thistle, teal, tan;
+
+$i:1;
+@each $color in $colors{
+    .box-#{$i}{
+        background-color: $color;
+    }
+    $i: $i +1
+}
+
+$customOrder: 3, 1, 4, 5, 6, 8, 9, 10, 2, 7;
+
+@for $i from 1 through 10 {
+    $currentBox: nth($customOrder, $i);
+    .box-#{$currentBox} {
+        order: $i;
+    }
+}

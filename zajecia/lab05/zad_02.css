@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+.box {
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px 5px gray;
+  text-align: center;
+}
+
+.box-1 {
+  background-color: violet;
+}
+
+.box-2 {
+  background-color: wheat;
+}
+
+.box-3 {
+  background-color: whitesmoke;
+}
+
+.box-4 {
+  background-color: yellow;
+}
+
+.box-5 {
+  background-color: yellowgreen;
+}
+
+.box-6 {
+  background-color: turquoise;
+}
+
+.box-7 {
+  background-color: tomato;
+}
+
+.box-8 {
+  background-color: thistle;
+}
+
+.box-9 {
+  background-color: teal;
+}
+
+.box-10 {
+  background-color: tan;
+}/*# sourceMappingURL=zad_02.css.map */

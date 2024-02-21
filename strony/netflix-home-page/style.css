@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("header-image.png");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  height: 100vh;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 70px;
+}
+header .header .logo > img {
+  width: 150px;
+  cursor: pointer;
+}
+header .header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+}
+header .header-content h1 {
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+header .header-content h3, header .header-content p {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+header .header-content .input {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+header .header-content .input input {
+  width: 450px;
+  padding: 20px;
+}
+header .language {
+  margin-right: 15px;
+}
+
+button {
+  cursor: pointer;
+  border-style: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  padding: 10px 15px;
+}
+
+.language {
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+.language i {
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.sign-in {
+  background-color: red;
+  font-size: 15px;
+}
+
+.get-started {
+  background-color: red;
+  border-radius: 0 5px 5px 0;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding: 20px 100px;
+}
+.content .column {
+  font-size: 25px;
+  flex-basis: 50%;
+}
+.content .column img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 100px;
+}
+.faq h2 {
+  font-size: 50px;
+  text-align: center;
+}
+.faq .questions li {
+  list-style: none;
+}
+.faq .questions label {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #303030;
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.faq .questions label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+.faq .questions .answer {
+  font-size: 18px;
+}
+
+footer {
+  margin: 0 100px;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(101, 101, 101);
+}
+footer .options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+footer .options .column {
+  display: flex;
+  flex-direction: column;
+}
+footer .lang {
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+}/*# sourceMappingURL=style.css.map */

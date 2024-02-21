@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+
+.box:nth-of-type(1) {
+  background-color: rgba(128, 128, 128, 0.333);
+}
+
+.box:nth-of-type(2) {
+  background-color: gray;
+}
+
+.box:nth-of-type(3) {
+  background-color: rgba(128, 128, 128, 0.543);
+}
+
+.box {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+}
+
+#outer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.box:first-child {
+  align-self: flex-start;
+}
+
+.box:last-child {
+  align-self: flex-end;
+}/*# sourceMappingURL=zad_03.css.map */

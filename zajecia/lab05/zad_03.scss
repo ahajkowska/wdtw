@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+$colors: rgba(128, 128, 128, 0.333), gray, rgba(128, 128, 128, 0.543);
+$i:1;
+@each $color in $colors{
+    .box:nth-of-type(#{$i}){
+        background-color: $color;
+    }
+    $i: $i+1;
+}
+
+.box{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+}
+
+#outer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.box:first-child{
+    align-self: flex-start;
+}
+
+.box:last-child {
+    align-self: flex-end;
+}

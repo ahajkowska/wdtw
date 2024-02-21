@@ -1,0 +1,89 @@
+@charset "UTF-8";
+body {
+  background-color: rgb(248, 242, 234);
+  margin: 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: antiquewhite;
+  color: rgb(66, 66, 62);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 10px;
+  padding: 15px;
+  box-shadow: 0 0 15px rgb(66, 66, 62);
+}
+
+.section {
+  padding: 15px;
+  margin: 30px;
+  background-color: rgb(250, 246, 239);
+  box-shadow: 5px 5px 10px rgb(184, 181, 175);
+  width: 900px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  border-color: rgb(213, 203, 193);
+}
+
+form {
+  margin: 10px 20px;
+}
+form legend {
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: rgb(162, 145, 124);
+}
+form .form-group {
+  color: rgb(66, 66, 62);
+  padding: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: right;
+  width: 550px;
+}
+form .form-group input {
+  padding: 7px;
+  width: 300px;
+}
+form button {
+  color: white;
+  background-color: rgb(162, 145, 124);
+  border-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 20px;
+  float: right;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(250, 235, 215, 0.758);
+}
+
+table {
+  border-collapse: collapse; /* Łączy granice komórek tabeli */
+}
+table th {
+  background-color: antiquewhite;
+  color: rgb(66, 66, 62);
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 15px;
+  padding: 10px;
+  line-height: 40px;
+}
+table td {
+  padding: 10px;
+  vertical-align: top; /* Ustawienie wyświetlania tekstu od góry */
+}/*# sourceMappingURL=zad_03.css.map */

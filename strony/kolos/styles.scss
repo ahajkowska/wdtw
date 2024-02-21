@@ -1,0 +1,138 @@
+@import "variables";
+
+button{
+    cursor: pointer;
+}
+
+body{
+    font-family: $font;
+    background-color: $body-bg-color;
+    font-size: 14px;
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    color: black;
+    justify-content: space-evenly;
+    width: 100%;
+    align-content: center;
+    padding: 10px;
+    z-index: 100;
+    cursor: pointer;
+    .titles{
+        display: flex;
+        font-weight: bold;
+        align-content: center;
+        .t{
+            margin-right: 40px;
+        }
+    }
+    .icons{
+        i{
+            border: 1px solid $tile-button-border;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+    }
+}
+
+
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    span{
+        color: red;
+    }
+}
+.mainicon{
+    position: absolute;
+    left: 350px;
+}
+
+main{
+    position: relative;
+    top: 50px;
+    display: flex;
+    
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+
+}
+
+.stripe{
+    position: relative;
+    background-color: $body-box-bg-color;
+}
+.content{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 80px;
+}
+
+
+.box{
+    border: 1px solid $desc-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $body-box-bg-color;
+    border-radius: 10px;
+    height: 200px;
+    margin-bottom: 20px;
+    .ikona{
+        position: relative;
+        bottom: 50px;
+        left: 60px;
+    }
+    .tytuł{
+        font-weight: bold;
+    }
+    .text{
+        color: $desc-color;
+    }
+}
+
+.opis{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    position: relative;
+}
+
+.buttons{
+    display: flex;
+    button{
+        position: relative;
+        left: 855px;
+        top: 50px;
+        margin-right: 20px;
+    }
+    .getstarted{
+        button{
+            border-style: none;
+            background-color: $hover-tile-bg-and-button-bg;
+            border-radius: 90px;
+            padding: 10px;
+        }
+    }
+    .npm{
+        button{
+            border: 1px solid $hover-tile-bg-and-button-bg;
+            background-color: transparent;
+            border-radius: 90px;
+            padding: 10px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+body{
+    margin: 0
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.box{
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px gray;
+    text-align: center;
+}
+
+$colors: violet, wheat, whitesmoke, yellow, yellowgreen, turquoise, tomato, thistle, teal, tan;
+$i:1;
+@each $color in $colors{
+    .box-#{$i}{
+        background-color: $color;
+    }
+    $i : $i +1
+}
